@@ -1,1 +1,131 @@
+.noticia-content {
+	background: #685f5f;
+    border-radius: 0vw;
+    justify-content: center;
+    margin-bottom:0vw;
+    display: flex;
+    flex-direction: row;
+    border: #222222;
+	width: 100%; /* Ancho de 300 píxeles */
+	box-sizing: border-box;
 
+}
+
+.noticias {
+	overflow: hidden;
+	margin-bottom: auto;
+
+}
+
+.noticias ul {
+	display: flex;
+	width: 510%;
+	animation: informacion 65s infinite linear;
+}
+
+.noticias li {
+	width: 95%;
+	list-style: none;
+	background-image: linear-gradient(#ffcc5d,#ffff99);
+	margin-right: 40px;
+	border: solid 8px #222222;
+	border-radius: 20px;
+}
+
+.noticias img {
+	width: 50%;
+	height: 580px;
+	border-radius: 1vw;
+}
+
+.noticias p {
+	width: 40%;
+	font-size: 24px;
+	padding: 5px;
+	margin: 0px;
+}
+
+@keyframes informacion {
+	0%{margin-left: 0;}
+	10%{margin-left: 0;}
+	20%{margin-left: -100%;}
+	30%{margin-left: -100%;}
+	40%{margin-left: -200%;}
+	50%{margin-left: -200%;}
+	60%{margin-left: -300%;}
+	70%{margin-left: -300%;}
+	80%{margin-left: -400%;}
+	90%{margin-left: -400%}
+	100%{margin-left: 0%}
+}
+
+@media (max-width: 768px) {
+    .noticia-content {
+		background: #685f5f;
+		border-radius: 0vw;
+		justify-content: center;
+		margin-bottom:0vw;
+		display: flex;
+		flex-direction: row;
+		border: #222222;
+		width: 100%; /* Ancho de 300 píxeles */
+		box-sizing: border-box;
+	
+	}
+	
+	.noticias {
+		overflow: hidden;
+		margin-bottom: auto;
+	
+	}
+	
+	.noticias ul {
+		display: flex;
+		width: 510%;
+		animation: informacion 65s infinite linear;
+	}
+	
+	.noticias li {
+		width: 95%;
+		list-style: none;
+		background-image: linear-gradient(#ffcc5d,#ffff99);
+		margin-right: 40px;
+		border: solid 8px #222222;
+		border-radius: 20px;
+		
+	}
+	
+	.noticias img {
+		width: 100%;
+		box-sizing: border-box;
+		height: 580px;
+		border-radius: 1vw;
+		
+	}
+	
+	.noticias p {
+		width: 50%;
+		font-size: 20px;
+		padding: 5px;
+		margin: 0px;
+	}
+
+	.cajaNoti{
+		flex-direction: column;
+	}
+
+	.cajaNoti img{
+		width: 100%;
+		height: auto;
+	}
+
+	.cajaNoti p{
+		width: 80%;
+		height: auto;
+		text-align: center;
+		font-size: 16px;
+		justify-content: center;
+		align-items: center;
+	}
+
+}
